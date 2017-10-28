@@ -3,8 +3,6 @@ var app= angular.module('app', ['satellizer','ngToast','ngNotify','ngSanitize','
 app.directive('signInWithGithubButton', function() {
   return {
     restrict: "E",
-    templateUrl: 'components/login/sign-in-with-github-button.html',
-
     controller: function($scope, $auth, $location, ngNotify){
 
       $scope.authenticate = function() {
@@ -23,6 +21,8 @@ app.directive('signInWithGithubButton', function() {
 		  		});
 
 		  };
-    }
+    },
+    template: '<button class="btn btn-block btn-login-github waves-effect waves-light" alt="sign in" ng-click="authenticate()" >Sign in with github</button>'
+
   };
 });

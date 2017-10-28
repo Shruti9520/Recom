@@ -1,3 +1,14 @@
+
+<html>
+<head>
+    <link rel="stylesheet" href="bower_components/ng-notify/src/styles/ng-notify.css" />
+    <link rel="stylesheet" href="bower_components/ngToast/dist/ngToast.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+ 
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+   <link rel="icon" href="views/img/github.png" sizes="16x16">
+</head>
+<body ng-app="docsSimpleDirective">
 <div class="login-container">
   <div class="signin-card card z-depth-4">
       <h1>Login PAGE</h1>
@@ -5,9 +16,23 @@
         <img src="img/github.png" alt="Github img" title="Github Recommender System" width="300">
       </div>
       <p class="subhead center-align">Sign-in to know about your recommendations!!</p> 
-      <sign-in-with-github-button></sign-in-with-github-button>
-      <div sign-in-with-github-button></div>
-
+      <div ng-controller="Controller">
+  <div sign-in-with-github-button></div>
+</div>
+      
+      
     </div>
 </div>
 
+   <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/satellizer/dist/satellizer.js"></script>
+    
+    <script src="bower_components/satellizer/dist/satellizer.min.js"></script>
+    <script src="bower_components/ngToast/dist/ngToast.js"></script>
+    <script src="bower_components/ngToast/dist/ngToast.min.js"></script>
+    <script src="bower_components/ng-notify/src/scripts/ng-notify.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.min.js"></script>
+    <script src="https://npmcdn.com/particlesjs@2.0.2/dist/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
